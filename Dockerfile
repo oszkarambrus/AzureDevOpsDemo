@@ -2,6 +2,7 @@ FROM openjdk:8-jdk-alpine as build
 WORKDIR /workspace/app
 
 COPY /complete/mvnw .
+COPY /complete/.mvn .mvn
 COPY /complete/pom.xml .
 COPY /complete/src src
 
